@@ -1,5 +1,6 @@
-# Middleman Boilerplate
-A simple way to build static pages with a Rails feel.
+-Rebuilding my portflio from scratch
+-Previous build broken because of yarn / package lock conflict and other messing
+-Fingers Crossed
 
 ## Using
 
@@ -8,33 +9,10 @@ A simple way to build static pages with a Rails feel.
 - [webpack](https://webpack.js.org) with [Babel](https://babeljs.org)
 - [Sass](https://sass-lang.com)
 
-## Init a new project
-1. Click the green `Use this Template` button and give your project a name
-2. In the new project, click on the green `Code` button to copy your SSH address
-3. `cd` into the folder named after your Github username in your Terminal
-4. Clone the repository like this
-`git clone git@github.com:dmbf29/NAME_OF_YOUR_PROJECT.git `
-5. Move into the directory `cd NAME_OF_YOUR_PROJECT`
 
-### Installation
-*Only if you don't have bundler or yarn*
-```
-gem install bundler
-brew install yarn
-```
-Then:
-```
-gem install middleman
-bundle install
-yarn install
-```
-⚠️ You may run into some into some gem warnings.<br>
-Warnings == 👌, but Fatal errors == ⛔️<br>
-If you get a fatal error, you can try fixing it with `bundle update` and hope for the best 🤞
 
 ## Run a server
-- `middleman`<br>
-or if that fails, try 
+
 - `bundle exec middleman`
 
 ## Deploy
