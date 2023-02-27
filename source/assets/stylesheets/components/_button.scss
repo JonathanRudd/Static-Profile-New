@@ -1,0 +1,50 @@
+.btn {
+  box-sizing: border-box;
+  width: 200px;
+  background: #13042D;
+  color: #FFFFFF !important;
+  border: 1px solid #FFFFFF !important;
+  border-radius: 91px !important;
+
+  font-family: JetBrains Mono;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 26px;
+  letter-spacing: -0.035em;
+  text-align: center;
+
+}
+
+//caret
+.toggle-button {
+  position: relative;
+}
+
+.toggle-button .caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 5px;
+  vertical-align: middle;
+  border-top: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+.toggle-section {
+  display: none;
+}
+//
+
+.dropdown li {
+  background: #13042D;
+  color: #FFFFFF;
+}
+
+.dropdown-menu {
+  background: #13042D;
+}
+
+ul.dropdown-menu {
+  background: #13042D;
+}

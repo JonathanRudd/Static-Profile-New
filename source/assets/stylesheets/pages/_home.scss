@@ -1,1 +1,243 @@
 // Specific CSS for your home-page
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background: #13042D !important;
+
+}
+
+.header {
+
+  position: absolute;
+  height: 274px;
+  top: 0px;
+  margin: 0;
+  width: 100%;
+
+  background: linear-gradient(180deg, rgba(11, 0, 208, 0.73) -6.91%, rgba(19, 4, 45, 0.73) 70.11%);
+}
+
+.social {
+  margin: 25px;
+}
+
+
+.title {
+  position:absolute;
+  width: 247px;
+  height: 124px;
+  left: 56px;
+  top: 50px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 200px;
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.035em;
+  color: #FFFFFF;
+
+  background: radial-gradient(58% 45.9% at 50% 45.14%, #0B00D0 0%, #13042D 100%, rgba(255, 255, 255, 0) 100%);
+
+  // border: 1px white solid;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  // top: 810px;
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height */
+  letter-spacing: -0.035em;
+  color: #FFFFFF;
+
+  text-align: center;
+  padding-bottom: 150px;
+  // border: 1px white solid;
+  background: radial-gradient(58% 45.9% at 50% 45.14%, #0B00D0 0%, #13042D 70%, rgba(255, 255, 255, 0) 100%);
+
+}
+
+.project-header {
+
+  position: absolute;
+  top: 810px;
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height */
+  letter-spacing: -0.035em;
+  color: #FFFFFF;
+
+  text-align: center;
+  // border: 1px white solid;
+}
+.subcontainer {
+  // border: #bf1919 solid 1px;
+}
+
+.project {
+  display: none;
+  width: 389px;
+  font-size: medium;
+}
+
+
+.headshot {
+  object-fit: cover;
+  height: 120px;
+  width: 270px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list-inline {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.list-inline > li {
+  display: inline-block;
+}
+
+.footer {
+  display: flexbox !important;
+  flex: auto;
+  flex-direction: column !important;
+  align-items: center !important;
+  position: fixed;
+
+  //hide under other content
+  z-index: -1;
+
+  margin-top: 25px;
+  bottom: 0px;
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.035em;
+  color: #FFFFFF 90%;
+
+}
+
+.footer-image {
+  // display: flex;
+  // align-items: center;
+  // height: 40px;
+  // width: 40px;
+  text-align: center;
+  object-fit: contain;
+}
+
+.fade-in {
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+
+// small screens
+
+@media (min-width: 100px) and (max-width: 575px) {
+  .info {
+    font-size: 16px;
+  }
+
+  .headshot {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project-header {
+    top: 750px;
+  }
+  .projects {
+    // top: 750px;
+  }
+
+}
+
+// big screens
+
+@media (min-width: 992px) {
+  .info {
+    flex-direction: row;
+    top: 150px;
+    font-size: 16px;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: 144px;
+    border: #FFFFFF 1px solid;
+    border-radius: 100px;
+  }
+
+  .social-icon {
+    margin: 10px;
+
+    color: #FFFFFF;
+
+  }
+
+  .project-header {
+    position: relative;
+    top: 125px;
+  }
+
+  .projects {
+
+    display: flexbox;
+    flex-direction: row;
+    justify-content: space-evenly;
+    left: 0px;
+
+    top: 75px;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  .sub-container {
+    display: flexbox;
+    flex-direction: column;
+  }
+
+  .headshot {
+    margin-left: 25%;
+  }
+
+  .textInfo {
+    width: 100%;
+    margin-left: 100px;
+  }
+
+  .footer {
+    right: -250px !important;
+  }
+
+}

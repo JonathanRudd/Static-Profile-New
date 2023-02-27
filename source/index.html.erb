@@ -1,8 +1,145 @@
-<div class="container mt-3">
+<body>
+
+
+<header class="header">
   <div class="row justify-content-center">
-    <div class="col">
-      <h1>Middleman Boilerplate</h1>
-      <p>Bootstrap and Font Awesome already installed.</p>
+    <div class="title col">
+      <div class="image">
+        <img src="assets/images/Title.png" alt="logo">
+      </div>
     </div>
   </div>
+</header>
+
+<div class="info container">
+
+        <div class="image headshot">
+          <img src="assets/images/MeLeWag.png" alt="it me" style="
+          height: 200px;
+          object-fit: cover;
+      ">
+        </div>
+      <br>
+      <br>
+      <br>
+      <div class="textInfo">
+        <div class="typewriter">
+          <h1>Jonathan Rudd</h1>
+          <p>Full-stack web developer</p>
+        </div>
+        <p>Ruby on Rails | HTML | CSS | JavaScript | PostgreSQL</p>
+        <p>Bootcamp graduate with strong problem-solving abilities and a strong drive to continuously learn and grow as a developer.</p>
+      </div>
+      <div class="social">
+          <a href="https://github.com/JonathanRudd" class="social-icon" target="blank"><i class="fab fa-github-square"></i></a>
+          <a href="https://www.linkedin.com/in/jonathanmrudd/" class="social-icon" target="blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/JonathanRudd" class="social-icon" target="blank"><i class="fab fa-github-square"></i></a>
+      </div>
+
 </div>
+
+<div class="project-header container">
+  <h1>Projects</h1>
+
+  <div class="projects container">
+
+    <div class="subcontainer">
+      <div class="dropdown">
+        <button id="toggle-button" class="btn toggle-button">Givr <span class="caret"></span></button>
+        <div class="project" style="display: none;">
+          <p>Working prototype of a community focused waste reduction webapp which uses image recognition to categorize items.</p>
+          <a href="https://givr.site" class="">Givr.site</a>
+          <a href="https://github.com/JonathanRudd/givr" class="social-icon" target="blank"><i class="fab fa-github-square"></i></a>
+        </div>
+      </div>
+      <br>
+      <div class="dropdown">
+        <button id="toggle-button" class="btn toggle-button">Spaced <span class="caret"></button>
+        <div class="project" style="display: none;">
+          <p>An Airbnb clone for users who want to rent or hire event spaces.</p>
+          <a href="https://spaced-848.herokuapp.com/" class="">Spaced</a>
+          <a href="https://github.com/JonathanRudd/Spaced" class="social-icon" target="blank"><i class="fab fa-github-square"></i></a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="subcontainer">
+      <div class="dropdown">
+        <button id="toggle-button" class="btn toggle-button">My Movies Watchlist <span class="caret"></button>
+        <div class="project" style="display: none;">
+          <p>Working prototype of a community focused waste reduction webapp which uses image recognition to categorize items.</p>
+          <a href="https://jonathans-rails-watch-list.herokuapp.com/" class="">My Movies</a>
+          <a href="https://github.com/JonathanRudd/rails-watch-list" class="social-icon" target="blank"><i class="fab fa-github-square"></i></a>
+        </div>
+      </div>
+      <br>
+      <div class="dropdown">
+        <button id="toggle-button" class="btn toggle-button">Line Chatbot <span class="caret"></button>
+        <div class="project" style="display: none;">
+          <p>A chatbot that can answer simple questions such as food reccomendations, and can identify images.</p>
+          <div>
+            <img src="assets/images/chatbot.png" alt="logo" style="width: 175px;">
+          </div>
+          <div>
+            <a href="https://github.com/JonathanRudd" class="social-icon" target="blank"><i class="fab fa-github-square"></i></a>
+            <a href="https://linevoom.line.me/user/_dTYGQ44fzQRVxX5QJ1vz5kCqEkMUGusai5I6sH0" class="social-icon" target="blank"><i class="fa fa-line"></i></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer class="footer container fade-in">
+  <div class="image footer-image">
+    <img src="assets/images/favicon.ico" style="width: 50px"alt="logo">
+  </div>
+  <div><p>2023</p></div>
+
+</footer>
+
+
+
+  <script>
+    const toggleButton = document.querySelectorAll('.toggle-button');
+    const project = document.querySelectorAll('.project');
+
+    // toggleButton.addEventListener('click', function() {
+    //   console.log("yay");
+    // });
+
+    toggleButton.forEach(function(button, index) {
+      button.addEventListener('click', function() {
+
+        if (project[index].style.display === 'none') {
+          project[index].style.display = 'block';
+        } else {
+          project[index].style.display = 'none';
+        }
+      });
+    });
+
+
+// make footer fade in using intersection observer
+  const target = document.querySelector('.fade-in');
+
+  function handleIntersection(entries) {
+    entries.map((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible')
+    } else {
+      entry.target.classList.remove('visible')
+    }
+  });
+  }
+
+const observer = new IntersectionObserver(handleIntersection);
+
+
+observer.observe('.project');
+
+  </script>
+
+</body>
