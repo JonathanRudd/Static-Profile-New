@@ -47,7 +47,7 @@ body {
   letter-spacing: -0.035em;
   color: #FFFFFF;
 
-  background: radial-gradient(58% 45.9% at 50% 45.14%, #0B00D0 0%, #13042D 100%, rgba(255, 255, 255, 0) 100%);
+  background: radial-gradient(58% 45.9% at 50% 45.14%, #0B00D0 0%, #13042D 70%, rgba(255, 255, 255, 0) 100%);
 
   // border: 1px white solid;
 }
@@ -94,8 +94,8 @@ body {
 }
 
 .project {
-  display: none;
-  width: 389px;
+  display: flex;
+  width: auto;
   font-size: medium;
 }
 
