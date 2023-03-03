@@ -10,34 +10,36 @@ body {
 }
 
 .header {
-
-  position: absolute;
-  height: 274px;
+  position: relative;
+  // height: 0px;
   top: 0px;
   margin: 0;
   width: 100%;
-
   background: linear-gradient(180deg, rgba(11, 0, 208, 0.73) -6.91%, rgba(19, 4, 45, 0.73) 70.11%);
 }
 
 .social {
   margin: 25px;
+  border: #FFFFFF 1px solid;
+  border-radius: 100px;
 }
 
 
 .title {
-  position:absolute;
+  position: relative;
+  display: flex;
   width: 247px;
-  height: 124px;
-  left: 56px;
-  top: 50px;
+  /* left: 56px; */
+  top: 23px;
+  align-items: center;
+  justify-content: center;
 }
 
 .info {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 200px;
+  top: 35px;
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 800;
@@ -46,17 +48,23 @@ body {
   text-align: center;
   letter-spacing: -0.035em;
   color: #FFFFFF;
-
   background: radial-gradient(58% 45.9% at 50% 45.14%, #0B00D0 0%, #13042D 70%, rgba(255, 255, 255, 0) 100%);
-
   // border: 1px white solid;
+}
+
+.typewriter {
+
+}
+
+.h1 {
+  font-family: 'JetBrains Mono' !important;
 }
 
 .projects {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  // top: 810px;
+  position: relative;
+  top: 30px;
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 800;
@@ -65,7 +73,6 @@ body {
   /* identical to box height */
   letter-spacing: -0.035em;
   color: #FFFFFF;
-
   text-align: center;
   padding-bottom: 150px;
   // border: 1px white solid;
@@ -74,9 +81,9 @@ body {
 }
 
 .project-header {
-
-  position: absolute;
-  top: 810px;
+  // position: absolute;
+  // top: 810px;
+  height: fit-content;
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 800;
@@ -85,7 +92,6 @@ body {
   /* identical to box height */
   letter-spacing: -0.035em;
   color: #FFFFFF;
-
   text-align: center;
   // border: 1px white solid;
 }
@@ -128,7 +134,6 @@ body {
 
   //hide under other content
   z-index: -1;
-
   margin-top: 25px;
   bottom: 0px;
   font-family: 'JetBrains Mono';
@@ -183,13 +188,30 @@ body {
 // big screens
 
 @media (min-width: 992px) {
+
+  .title {
+    position: absolute;
+    display: flex;
+    width: 247px;
+    left: 56px;
+    top: 23px;
+    align-items: flex-start;
+    justify-content: left;
+  }
+
   .info {
     flex-direction: row;
     top: 150px;
     font-size: 16px;
+    background: none;
   }
 
   .social {
+    margin: 25px;
+    top: -113px;
+    position: relative;
+    right: -10px;
+
     display: flex;
     flex-direction: row;
     height: fit-content;
@@ -207,20 +229,32 @@ body {
 
   .project-header {
     position: relative;
-    top: 125px;
+    // top: 125px;
   }
 
   .projects {
-
+    position: relative;
     display: flexbox;
-    flex-direction: row;
     justify-content: space-evenly;
     left: 0px;
-
-    top: 75px;
+    top: 125px;
     margin-left: 200px;
     margin-right: 200px;
   }
+
+  .subcontainer-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+
+  .dropdown {
+    flex-direction: row;
+  }
+
+
 
   .sub-container {
     display: flexbox;
