@@ -189,6 +189,14 @@ body {
 
 @media (min-width: 992px) {
 
+  .header {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(180deg, rgba(11, 0, 208, 0.73) -6.91%, rgba(19, 4, 45, 0.73) 70.11%);
+  }
+
+
   .title {
     position: absolute;
     display: flex;
@@ -254,15 +262,13 @@ body {
     flex-direction: row;
   }
 
-
-
   .sub-container {
     display: flexbox;
     flex-direction: column;
   }
 
   .headshot {
-    margin-left: 25%;
+    margin-left: 17.5%;
   }
 
   .textInfo {
