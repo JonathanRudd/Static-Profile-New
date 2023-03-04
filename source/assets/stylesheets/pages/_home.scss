@@ -20,10 +20,20 @@ body {
 
 .social {
   margin: 25px;
+  display: flex;
   border: #FFFFFF 1px solid;
   border-radius: 100px;
+  width: 133px;
+  align-self: center;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 36px;
 }
 
+.social-icon {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 
 .title {
   position: relative;
@@ -43,13 +53,19 @@ body {
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 800;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 16px;
+  line-height: 21px;
+
   text-align: center;
   letter-spacing: -0.035em;
   color: #FFFFFF;
   background: radial-gradient(58% 45.9% at 50% 45.14%, #0B00D0 0%, #13042D 70%, rgba(255, 255, 255, 0) 100%);
   // border: 1px white solid;
+}
+
+.info p {
+  margin-bottom: 20px;
+  line-height: 24px;
 }
 
 .typewriter {
@@ -99,10 +115,18 @@ body {
   // border: #bf1919 solid 1px;
 }
 
+.dropdown {
+  // display: inline-block;
+}
+
 .project {
   display: flex;
   width: auto;
   font-size: medium;
+}
+
+.project p {
+  width: 290px;
 }
 
 
@@ -112,6 +136,7 @@ body {
   width: 270px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 140px;
 }
 
 .list-inline {
@@ -259,10 +284,11 @@ body {
   }
 
   .dropdown {
-    flex-direction: row;
+    // display: flex;
+    // flex-direction: row;
   }
 
-  .sub-container {
+  .subcontainer {
     display: flexbox;
     flex-direction: column;
   }
