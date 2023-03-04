@@ -6,7 +6,6 @@
 body {
   position: relative;
   background: #13042D !important;
-
 }
 
 .header {
@@ -55,7 +54,6 @@ body {
   font-weight: 800;
   font-size: 16px;
   line-height: 21px;
-
   text-align: center;
   letter-spacing: -0.035em;
   color: #FFFFFF;
@@ -66,10 +64,7 @@ body {
 .info p {
   margin-bottom: 20px;
   line-height: 24px;
-}
-
-.typewriter {
-
+  font-weight: 200;
 }
 
 .h1 {
@@ -86,14 +81,28 @@ body {
   font-weight: 800;
   font-size: 24px;
   line-height: 32px;
+  align-items: center;
   /* identical to box height */
   letter-spacing: -0.035em;
   color: #FFFFFF;
   text-align: center;
-  padding-bottom: 150px;
+  padding-bottom: 75px;
   // border: 1px white solid;
   background: radial-gradient(58% 45.9% at 50% 45.14%, #0B00D0 0%, #13042D 70%, rgba(255, 255, 255, 0) 100%);
 
+}
+
+.projects h1 {
+font-family: 'JetBrains Mono';
+letter-spacing: -0.035em;
+font-style: normal;
+font-weight: 800;
+font-size: 22px;
+line-height: 32px;
+}
+
+.projects p {
+  font-weight: 200;
 }
 
 .project-header {
@@ -155,8 +164,7 @@ body {
   flex: auto;
   flex-direction: column !important;
   align-items: center !important;
-  position: fixed;
-
+  position: relative;
   //hide under other content
   z-index: -1;
   margin-top: 25px;
@@ -241,7 +249,7 @@ body {
 
   .social {
     margin: 25px;
-    top: -113px;
+    top: -200px;
     position: relative;
     right: -10px;
 
@@ -275,6 +283,11 @@ body {
     margin-right: 200px;
   }
 
+  .projects h1 {
+    position: relative;
+    right: 8px;
+  }
+
   .subcontainer-container {
     position: relative;
     display: flex;
@@ -291,6 +304,7 @@ body {
   .subcontainer {
     display: flexbox;
     flex-direction: column;
+    margin: 40px;
   }
 
   .headshot {
@@ -303,7 +317,7 @@ body {
   }
 
   .footer {
-    right: -250px !important;
+    right: -475px !important;
   }
 
 }
