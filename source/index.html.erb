@@ -11,7 +11,14 @@
   </div>
 </header>
 
-<div class="info container">
+<div id="navbar_top" class="navbar nav-buttons sticky-top">
+  <a href="#projects">Projects</a>
+  <a href="#info" class="activated">Info</a>
+  <a href="#resume">Resume</a>
+  <a href="#contact">Contacts</a>
+</div>
+
+<div id="info" class="info container">
 
         <div class="image headshot">
           <img src="assets/images/MeLeWag.png" alt="it me" style="
@@ -41,7 +48,7 @@
 
   <div class="projects container">
 
-    <div class="project-header container">
+    <div id="projects" class="project-header container">
       <h1>Projects</h1>
     </div>
 
@@ -97,6 +104,9 @@
     </div>
   </div>
 
+<div id="contact" class="contact">
+  <h1>Contact Me</h1>
+</div>
 
 <footer class="footer container">
   <div class="image footer-image">
@@ -108,13 +118,31 @@
 
 
 
+
   <script>
+// navbar stick to top on scroll
+
+  document.addEventListener("DOMContentLoaded", function(){
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 165) {
+          document.getElementById('navbar_top').classList.add('fixed-top');
+          // add padding top to show content behind navbar
+          navbar_height = document.querySelector('.navbar').offsetHeight;
+          document.body.style.paddingTop = navbar_height + 'px';
+        } else {
+          document.getElementById('navbar_top').classList.remove('fixed-top');
+          // remove padding top from body
+          document.body.style.paddingTop = '0';
+        }
+    });
+  });
+
+
+  //project dropdowns
     const toggleButton = document.querySelectorAll('.toggle-button');
     const project = document.querySelectorAll('.project');
 
-    // toggleButton.addEventListener('click', function() {
-    //   console.log("yay");
-    // });
+
 
     toggleButton.forEach(function(button, index) {
       button.addEventListener('click', function() {
@@ -129,19 +157,19 @@
 
 
 // make footer fade in using intersection observer
-  const target = document.querySelector('.fade-in');
+//   const target = document.querySelector('.fade-in');
 
-  function handleIntersection(entries) {
-    entries.map((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible')
-    } else {
-      entry.target.classList.remove('visible')
-    }
-  });
-  }
+//   function handleIntersection(entries) {
+//     entries.map((entry) => {
+//     if (entry.isIntersecting) {
+//       entry.target.classList.add('visible')
+//     } else {
+//       entry.target.classList.remove('visible')
+//     }
+//   });
+//   }
 
-const observer = new IntersectionObserver(handleIntersection);
+// const observer = new IntersectionObserver(handleIntersection);
 
 
 observer.observe('.project');
