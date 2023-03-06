@@ -48,7 +48,9 @@ body {
 }
 
 .social {
-  margin: 25px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
   display: flex;
   border: #FFFFFF 1px solid;
   border-radius: 100px;
@@ -72,23 +74,18 @@ body {
 .github {
   background-image: url(/assets/images/brandicons/GithubWhite.png);
 }
-
 .github:hover{
   background-image: url(/assets/images/brandicons/Github.png);
 }
-
 .linkedin {
   background-image: url(/assets/images/brandicons/linkedin.png);
 }
-
 .linkedin:hover{
   background-image: url(/assets/images/brandicons/linkedinblue.png);
 }
-
 .insta {
   background-image: url(/assets/images/brandicons/insta.png);
 }
-
 .insta:hover {
   background-image: url(/assets/images/brandicons/instablue.png);
 }
@@ -233,7 +230,7 @@ body {
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 800;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 32px;
 
 }
@@ -349,18 +346,21 @@ body {
   .info {
     flex-direction: row;
     top: 150px;
-    font-size: 16px;
+    width: 1000px !important;
+    font-size: 14px;
     background: none;
+    line-height: 21px;
   }
 
   .social {
-    margin: 25px;
-    top: -200px;
+    margin: 5px;
+    top: -355px;
     position: relative;
-    right: -10px;
-
+    right: -364px;
     display: flex;
     flex-direction: row;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     width: 144px;
     border: #FFFFFF 1px solid;
@@ -410,7 +410,7 @@ body {
   .subcontainer {
     display: flexbox;
     flex-direction: column;
-    margin: 40px;
+    margin: 0px 40px;
   }
 
   .headshot {
@@ -418,8 +418,8 @@ body {
   }
 
   .textInfo {
-    width: 100%;
-    margin-left: 100px;
+    width: 430px;
+    margin-left: 40px;
   }
 
   .footer {
