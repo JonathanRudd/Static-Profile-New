@@ -62,6 +62,35 @@ body {
 .social-icon {
   margin-top: 5px;
   margin-bottom: 5px;
+  display: inline-block;
+  height: 26px;
+  width: 26px;
+  background-repeat: no-repeat;
+}
+
+//using .png rather than font awesome for better aesthetics
+.github {
+  background-image: url(/assets/images/brandicons/GithubWhite.png);
+}
+
+.github:hover{
+  background-image: url(/assets/images/brandicons/Github.png);
+}
+
+.linkedin {
+  background-image: url(/assets/images/brandicons/linkedin.png);
+}
+
+.linkedin:hover{
+  background-image: url(/assets/images/brandicons/linkedinblue.png);
+}
+
+.insta {
+  background-image: url(/assets/images/brandicons/insta.png);
+}
+
+.insta:hover {
+  background-image: url(/assets/images/brandicons/instablue.png);
 }
 
 .title {
@@ -195,7 +224,28 @@ body {
 .resume {
   color: #FFFFFF;
   position: relative;
+  display: flex;
+  border-radius: 100px;
+  width: 210px;
+  margin: auto;
+  justify-content: center;
+
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 32px;
+
 }
+
+.resume a {
+  color: #00C2FF;
+}
+
+.resume a:hover {
+  color: white;
+}
+
 
 .contact {
   color: #FFFFFF;
@@ -239,6 +289,14 @@ body {
   opacity: 1;
 }
 
+.projects a {
+  color: #00C2FF;
+}
+
+.projects a:hover {
+  color: white;
+}
+
 // small screens
 
 @media (min-width: 100px) and (max-width: 575px) {
@@ -257,6 +315,8 @@ body {
   .projects {
     // top: 750px;
   }
+
+
 
 }
 
