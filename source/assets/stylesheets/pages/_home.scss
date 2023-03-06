@@ -17,6 +17,36 @@ body {
   background: linear-gradient(180deg, rgba(11, 0, 208, 0.73) -6.91%, rgba(19, 4, 45, 0.73) 70.11%);
 }
 
+.nav-buttons {
+  position: relative;
+  margin-top: 27px;
+  top: 33px;
+  display: flex;
+  justify-content: center;
+  background: #13042D;
+}
+
+.fixed-top {
+  position: fixed !important;
+  top: -35px;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.nav-buttons a {
+  margin: 5px;
+  width: 65px;
+  color: #FFFFFF;
+
+  border-radius: 91px;
+  text-align: center;
+}
+
+.activated {
+  background: linear-gradient(180deg, #0B00D0 0%, #00C2FF 100%);
+}
+
 .social {
   margin: 25px;
   display: flex;
@@ -32,6 +62,35 @@ body {
 .social-icon {
   margin-top: 5px;
   margin-bottom: 5px;
+  display: inline-block;
+  height: 26px;
+  width: 26px;
+  background-repeat: no-repeat;
+}
+
+//using .png rather than font awesome for better aesthetics
+.github {
+  background-image: url(/assets/images/brandicons/GithubWhite.png);
+}
+
+.github:hover{
+  background-image: url(/assets/images/brandicons/Github.png);
+}
+
+.linkedin {
+  background-image: url(/assets/images/brandicons/linkedin.png);
+}
+
+.linkedin:hover{
+  background-image: url(/assets/images/brandicons/linkedinblue.png);
+}
+
+.insta {
+  background-image: url(/assets/images/brandicons/insta.png);
+}
+
+.insta:hover {
+  background-image: url(/assets/images/brandicons/instablue.png);
 }
 
 .title {
@@ -93,12 +152,12 @@ body {
 }
 
 .projects h1 {
-font-family: 'JetBrains Mono';
-letter-spacing: -0.035em;
-font-style: normal;
-font-weight: 800;
-font-size: 22px;
-line-height: 32px;
+  font-family: 'JetBrains Mono';
+  letter-spacing: -0.035em;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 32px;
 }
 
 .projects p {
@@ -109,6 +168,7 @@ line-height: 32px;
   // position: absolute;
   // top: 810px;
   height: fit-content;
+  margin-bottom: 30px;
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 800;
@@ -140,6 +200,8 @@ line-height: 32px;
 
 
 .headshot {
+  position: relative;
+  right: 35px;
   object-fit: cover;
   height: 120px;
   width: 270px;
@@ -157,6 +219,36 @@ line-height: 32px;
 
 .list-inline > li {
   display: inline-block;
+}
+
+.resume {
+  color: #FFFFFF;
+  position: relative;
+  display: flex;
+  border-radius: 100px;
+  width: 210px;
+  margin: auto;
+  justify-content: center;
+
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 32px;
+
+}
+
+.resume a {
+  color: #00C2FF;
+}
+
+.resume a:hover {
+  color: white;
+}
+
+
+.contact {
+  color: #FFFFFF;
 }
 
 .footer {
@@ -197,6 +289,14 @@ line-height: 32px;
   opacity: 1;
 }
 
+.projects a {
+  color: #00C2FF;
+}
+
+.projects a:hover {
+  color: white;
+}
+
 // small screens
 
 @media (min-width: 100px) and (max-width: 575px) {
@@ -216,6 +316,8 @@ line-height: 32px;
     // top: 750px;
   }
 
+
+
 }
 
 // big screens
@@ -229,6 +331,10 @@ line-height: 32px;
     background: linear-gradient(180deg, rgba(11, 0, 208, 0.73) -6.91%, rgba(19, 4, 45, 0.73) 70.11%);
   }
 
+  .nav-buttons {
+    visibility: hidden;
+    display: contents;
+  }
 
   .title {
     position: absolute;
