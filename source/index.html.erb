@@ -1,7 +1,7 @@
 <body>
 
 
-<header class="header">
+<header class="header" id="top">
   <div class="row justify-content-center">
     <div class="title col">
       <div class="image">
@@ -12,10 +12,12 @@
 </header>
 
 <div id="navbar_top" class="navbar nav-buttons sticky-top">
-  <a href="#projects">Projects</a>
-  <a href="#info" class="activated">Info</a>
-  <a href="#resume">Resume</a>
-  <a href="#contact">Contacts</a>
+  <a href="#top" id="topbutton">Top</a>
+  <a href="#info" id="infobutton">Info</a>
+  <a href="#resume" id="resumebutton">Resume</a>
+  <a href="#projects" id="projectsbutton">Projects</a>
+
+
 </div>
 
 <div id="info" class="info container">
@@ -35,15 +37,11 @@
           <p>Full-stack web developer</p>
         </div>
         <p>Ruby on Rails | HTML | CSS | JavaScript | PostgreSQL</p>
-        <p>Bootcamp graduate with strong problem-solving abilities and a strong drive to continuously learn and grow as a developer.</p>
+        <p id="resume">Bootcamp graduate with strong problem-solving abilities and a strong drive to continuously learn and grow as a developer.</p>
 
-        <div id="resume" class="resume">
+        <div class="resume">
           <a href="https://drive.google.com/file/d/1t6SjyBkiVm8hQ2l_8KG0iS04n3VF7db6/view?usp=sharing">Download Resume</a>
         </div>
-
-
-
-
 
         <div class="social">
             <a href="https://github.com/JonathanRudd" class="social-icon github" target="blank"></a>
@@ -148,6 +146,41 @@
     });
   });
 
+// Navbar button highlight changes with scroll
+
+window.addEventListener("scroll", function() {
+  const element1 = document.querySelector("#topbutton");
+  const element2 = document.querySelector("#infobutton");
+  const element3 = document.querySelector("#resumebutton");
+  const element4 = document.querySelector("#projectsbutton");
+  const scrollPosition = window.scrollY;
+
+  if (scrollPosition >= 0 && scrollPosition <= 350) {
+    element1.classList.add("activated");
+  } else {
+    element1.classList.remove("activated");
+  }
+
+  if (scrollPosition >= 351 && scrollPosition <= 475) {
+    element2.classList.add("activated");
+  } else {
+    element2.classList.remove("activated");
+  }
+
+    if (scrollPosition >= 476 && scrollPosition <= 620) {
+    element3.classList.add("activated");
+  } else {
+    element3.classList.remove("activated");
+  }
+
+      if (scrollPosition >= 621 ) {
+    element4.classList.add("activated");
+  } else {
+    element4.classList.remove("activated");
+  }
+
+});
+
 
   //project dropdowns
     const toggleButton = document.querySelectorAll('.toggle-button');
@@ -166,10 +199,8 @@
       });
     });
 
-
 // make footer fade in using intersection observer
 //   const target = document.querySelector('.fade-in');
-
 //   function handleIntersection(entries) {
 //     entries.map((entry) => {
 //     if (entry.isIntersecting) {
@@ -179,11 +210,10 @@
 //     }
 //   });
 //   }
-
 // const observer = new IntersectionObserver(handleIntersection);
+// observer.observe('.project');
 
 
-observer.observe('.project');
 
   </script>
 
