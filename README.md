@@ -1,6 +1,15 @@
 -Rebuilding my portflio from scratch
 -Previous build broken because of yarn / package lock conflict and other messing
--Fingers Crossed
+
+
+https://trello.com/b/nvXkqSnb/jonychan
+
+
+
+
+
+
+
 
 ## Using
 
@@ -8,6 +17,11 @@
 - [Yarn](https://yarnpkg.com)
 - [webpack](https://webpack.js.org) with [Babel](https://babeljs.org)
 - [Sass](https://sass-lang.com)
+
+
+
+
+
 
 
 
