@@ -136,6 +136,7 @@ body {
   flex-direction: column;
   position: relative;
   top: 30px;
+  width: auto;
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 800;
@@ -169,6 +170,7 @@ body {
   // position: absolute;
   // top: 810px;
   height: fit-content;
+  max-width: fit-content;
   margin-bottom: 30px;
   font-family: 'JetBrains Mono';
   font-style: normal;
@@ -183,10 +185,18 @@ body {
 }
 .subcontainer {
   // border: #bf1919 solid 1px;
+
 }
+
+
 
 .dropdown {
   // display: inline-block;
+}
+
+.links {
+  display: inline-flex;
+  flex-direction: column;
 }
 
 .project {
