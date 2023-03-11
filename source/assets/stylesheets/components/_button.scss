@@ -18,10 +18,16 @@
 //caret
 .toggle-button {
   position: relative;
+
+  // animation: drop 0.9s;
+  // animation-fill-mode: forwards;
+  // opacity: 1;
 }
+
 
 .toggle-button .caret {
   display: inline-block;
+  transition: height .4s ease;
   width: 0;
   height: 0;
   margin-left: 5px;

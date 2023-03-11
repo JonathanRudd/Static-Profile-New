@@ -65,7 +65,7 @@
       <div class="subcontainer">
         <div class="dropdown">
           <button id="toggle-button" class="btn toggle-button">Givr <span class="caret"></span></button>
-          <div class="project" style="display: none;">
+          <div class="project">
             <p>Working prototype of a community focused waste reduction webapp which uses image recognition to categorize items.</p>
 
             <div class="links">
@@ -79,7 +79,7 @@
         <br>
         <div class="dropdown">
           <button id="toggle-button" class="btn toggle-button">Spaced <span class="caret"></button>
-          <div class="project" style="display: none;">
+          <div class="project">
             <p>An Airbnb clone for users who want to rent or hire event spaces.</p>
             <a href="https://spaced-848.herokuapp.com/" class="">Spaced</a>
             <a href="https://github.com/JonathanRudd/Spaced" class="" target="blank">Github</i></a>
@@ -90,7 +90,7 @@
       <div class="subcontainer">
         <div class="dropdown">
           <button id="toggle-button" class="btn toggle-button">My Movies Watchlist <span class="caret"></button>
-          <div class="project" style="display: none;">
+          <div class="project">
             <p>Working prototype of a community focused waste reduction webapp which uses image recognition to categorize items.</p>
             <a href="https://jonathans-rails-watch-list.herokuapp.com/" class="">My Movies</a>
             <a href="https://github.com/JonathanRudd/rails-watch-list" class="" target="blank">
@@ -102,7 +102,7 @@
         <br>
         <div class="dropdown">
           <button id="toggle-button" class="btn toggle-button">Line Chatbot <span class="caret"></button>
-          <div class="project" style="display: none;">
+          <div class="project">
             <p>A chatbot that can answer simple questions such as food reccomendations, and can identify images.</p>
             <div>
               <img src="assets/images/chatbot.png" alt="logo" style="width: 175px;">
@@ -191,18 +191,27 @@ window.addEventListener("scroll", function() {
     const toggleButton = document.querySelectorAll('.toggle-button');
     const project = document.querySelectorAll('.project');
 
-
-
-    toggleButton.forEach(function(button, index) {
-      button.addEventListener('click', function() {
-
-        if (project[index].style.display === 'none') {
-          project[index].style.display = 'block';
-        } else {
-          project[index].style.display = 'none';
-        }
+    toggleButton.forEach((btn, i) => {
+      btn.addEventListener('click', () => {
+        project[i].classList.toggle('show');
       });
     });
+
+
+
+    // toggleButton.forEach(function(button, index) {
+    //   button.addEventListener('click', function() {
+
+    //     if (project[index].style.display === 'none') {
+    //       project[index].style.display = 'block';
+
+    //       // toggleButton.classList.toggle('toggle-button--animate');
+
+    //     } else {
+    //       project[index].style.display = 'none';
+    //     }
+    //   });
+    // });
 
 // make footer fade in using intersection observer
 //   const target = document.querySelector('.fade-in');

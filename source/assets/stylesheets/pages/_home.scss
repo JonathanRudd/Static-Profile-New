@@ -201,9 +201,25 @@ body {
 
 .project {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   width: auto;
   font-size: medium;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
 }
+
+.project.show {
+  max-height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
 
 .project p {
   width: 290px;
@@ -292,13 +308,13 @@ body {
   object-fit: contain;
 }
 
-.fade-in {
-  transition: opacity 1s ease, transform 1s ease;
-}
+// .fade-in {
+//   transition: opacity 1s ease, transform 1s ease;
+// }
 
-.fade-in.visible {
-  opacity: 1;
-}
+// .fade-in.visible {
+//   opacity: 1;
+// }
 
 .projects a {
   color: #00C2FF;
