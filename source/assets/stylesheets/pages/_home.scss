@@ -149,9 +149,27 @@ body {
   text-align: center;
   padding-bottom: 75px;
   // border: 1px white solid;
-  background: radial-gradient(58% 45.9% at 50% 45.14%, #0B00D0 0%, #13042D 70%, rgba(255, 255, 255, 0) 100%);
-
 }
+
+.plasma-drive {
+  background: radial-gradient(58% 45.9% at 50% 45.14%, #0B00D0 0%, #13042D 70%, rgba(255, 255, 255, 0) 100%);
+  animation: flux 3s linear 2s infinite alternate;
+  position: absolute;
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+  min-height: 500px;
+  top: -50px;
+}
+
+@keyframes flux {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
 
 .projects h1 {
   font-family: 'JetBrains Mono';
@@ -192,6 +210,7 @@ body {
 
 .dropdown {
   // display: inline-block;
+
 }
 
 .links {
@@ -212,7 +231,7 @@ body {
 
 .project.show {
   max-height: 300px;
-
+  // height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -435,6 +454,7 @@ body {
   .dropdown {
     // display: flex;
     // flex-direction: row;
+
   }
 
   .subcontainer {
