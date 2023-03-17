@@ -16,8 +16,6 @@
   <a href="#info" id="infobutton">Info</a>
   <a href="#resume" id="resumebutton">Resume</a>
   <a href="#projects" id="projectsbutton">Projects</a>
-
-
 </div>
 
 <div id="info" class="info container">
@@ -68,6 +66,9 @@
         <div class="dropdown">
           <button id="toggle-button" class="btn toggle-button">Givr <span class="caret"></span></button>
           <div class="project">
+
+              <img src="assets/images/Givr.png" alt="" class="project-img">
+
             <p>Working prototype of a community focused waste reduction webapp which uses image recognition to categorize items.</p>
 
             <div class="links">
@@ -82,6 +83,7 @@
         <div class="dropdown">
           <button id="toggle-button" class="btn toggle-button">Spaced <span class="caret"></button>
           <div class="project">
+            <img src="assets/images/Spaced.png" alt="" class="project-img">
             <p>An Airbnb clone for users who want to rent or hire event spaces.</p>
             <a href="https://spaced-848.herokuapp.com/" class="">Spaced</a>
             <a href="https://github.com/JonathanRudd/Spaced" class="" target="blank">Github</i></a>
@@ -93,6 +95,7 @@
         <div class="dropdown">
           <button id="toggle-button" class="btn toggle-button">My Movies Watchlist <span class="caret"></button>
           <div class="project">
+            <img src="assets/images/MyMovies.png" alt="" class="project-img">
             <p>Working prototype of a community focused waste reduction webapp which uses image recognition to categorize items.</p>
             <a href="https://jonathans-rails-watch-list.herokuapp.com/" class="">My Movies</a>
             <a href="https://github.com/JonathanRudd/rails-watch-list" class="" target="blank">
@@ -105,10 +108,8 @@
         <div class="dropdown">
           <button id="toggle-button" class="btn toggle-button">Line Chatbot <span class="caret"></button>
           <div class="project">
+            <img src="assets/images/chatbot.png" alt="logo" class="project-img">
             <p>A chatbot that can answer simple questions such as food reccomendations, and can identify images.</p>
-            <div>
-              <img src="assets/images/chatbot.png" alt="logo" style="width: 175px;">
-            </div>
             <div>
               <a href="https://github.com/JonathanRudd" class="social-icon" target="blank">Github</i></a>
               <a href="https://linevoom.line.me/user/_dTYGQ44fzQRVxX5QJ1vz5kCqEkMUGusai5I6sH0" class="" target="blank"><i class="fa fa-line"></i></a>
@@ -194,42 +195,16 @@ window.addEventListener("scroll", function() {
     const toggleButton = document.querySelectorAll('.toggle-button');
     const project = document.querySelectorAll('.project');
 
+    const caret = document.querySelectorAll('.caret')
+
     toggleButton.forEach((btn, i) => {
       btn.addEventListener('click', () => {
         project[i].classList.toggle('show');
+        caret[i].classList.toggle('open');
       });
     });
 
-
-
-    // toggleButton.forEach(function(button, index) {
-    //   button.addEventListener('click', function() {
-
-    //     if (project[index].style.display === 'none') {
-    //       project[index].style.display = 'block';
-
-    //       // toggleButton.classList.toggle('toggle-button--animate');
-
-    //     } else {
-    //       project[index].style.display = 'none';
-    //     }
-    //   });
-    // });
-
-// make footer fade in using intersection observer
-//   const target = document.querySelector('.fade-in');
-//   function handleIntersection(entries) {
-//     entries.map((entry) => {
-//     if (entry.isIntersecting) {
-//       entry.target.classList.add('visible')
-//     } else {
-//       entry.target.classList.remove('visible')
-//     }
-//   });
-//   }
-// const observer = new IntersectionObserver(handleIntersection);
-// observer.observe('.project');
-
+// also remove class from span
 
 
   </script>

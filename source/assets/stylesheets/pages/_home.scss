@@ -141,7 +141,7 @@ body {
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 26px;
   align-items: center;
   /* identical to box height */
   letter-spacing: -0.035em;
@@ -229,8 +229,16 @@ body {
   transition: max-height 0.5s ease-out;
 }
 
+.project-img {
+    /* border: #FFFFFF 1px solid; */
+    height: 140px;
+    object-fit: cover;
+    margin: 20px;
+    border-radius: 5px;
+}
+
 .project.show {
-  max-height: 300px;
+  max-height: 450px;
   // height: 250px;
   display: flex;
   flex-direction: column;
