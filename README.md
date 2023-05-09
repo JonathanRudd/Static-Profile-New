@@ -1,14 +1,12 @@
--Rebuilding my portflio from scratch
--Previous build broken because of yarn / package lock conflict and other messing
+New Update Goals:
 
+-Restructure Desktop View
+  -Change big screen view into a more minimalist design with scrolling and JS slide ins (silly but looks interesting)
 
-https://trello.com/b/nvXkqSnb/jonychan
-
-
-
-
-
-
+-Tidy Up and neaten Project dropdown sections (proper cards?)
+-Add text glow effect like in KTproject
+-Add a proper contact form.
+-Smoother animations
 
 
 ## Using
