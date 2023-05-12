@@ -1,7 +1,7 @@
 New Update Goals:
 
 -Restructure Desktop View
-  -Change big screen view into a more minimalist design with scrolling and JS slide ins (silly but looks interesting)
+  -Change big screen view into a more minimalist design with scrolling and JS slide ins (silly but shows js ability)
 
 -Tidy Up and neaten Project dropdown sections (proper cards?)
 -Add text glow effect like in KTproject
