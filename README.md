@@ -8,6 +8,8 @@ New Update Goals:
 -Add a proper contact form.
 -Smoother animations
 
+-Rotating / fading set of words in place of "enthusiastic" / "passionate"
+-Language toggle EN / JP / ES
 
 ## Using
 
