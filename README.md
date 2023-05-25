@@ -1,5 +1,6 @@
 New Update Goals:
 
+
 -Restructure Desktop View
   -Change big screen view into a more minimalist design with scrolling and JS slide ins (silly but shows js ability)
 
@@ -8,6 +9,7 @@ New Update Goals:
 -Add a proper contact form.
 -Smoother animations
 
+Currently ignoring the above and adding a silly scrolling list to my description
 
 ## Using
 
