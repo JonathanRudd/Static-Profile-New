@@ -159,6 +159,7 @@ body {
   width: -webkit-fill-available;
   min-height: 500px;
   top: -50px;
+  z-index: -1;
 }
 
 @keyframes flux {
