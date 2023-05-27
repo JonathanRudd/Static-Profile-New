@@ -1,6 +1,10 @@
 New Update Goals:
 
 
+-Align projects grid
+
+-Add presentation video!
+
 -Restructure Desktop View
   -Change big screen view into a more minimalist design with scrolling and JS slide ins (silly but shows js ability)
 
@@ -10,8 +14,10 @@ New Update Goals:
 -Smoother animations
 
 
--Rotating / fading set of words in place of "enthusiastic" / "passionate"
+
 -Language toggle EN / JP / ES
+
+Done: -Rotating / fading set of words in place of "enthusiastic" / "passionate"
 
 
 ## Using
