@@ -2,11 +2,12 @@
 
 .rotating-text {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
   height: 160px;
-  overflow:hidden;
+  // overflow:hidden;
+
 
   // // font-family: 'Lato', sans-serif;
   // font-size: 35px;
@@ -14,19 +15,18 @@
   // color: #ecf0f1;
 
   &__container {
-    font-weight: 600;
+    text-align: left;
+    position: absolute;
+    list-style: none;
+    bottom: 90px;
     overflow: hidden;
-    height: 40px;
-    padding: 0 40px;
+    // height: 40px;
+    // padding: 0 40px;
 
 
     &:after, &:before {
-      position: absolute;
-      top: 0;
-
-      color: #16a085;
-      font-size: 42px;
-      line-height: 40px;
+      // position: absolute;
+      // top: 0;
 
       -webkit-animation-name: opacity;
       -webkit-animation-duration: 2s;
@@ -37,16 +37,17 @@
     }
 
     &__text {
-      display: inline;
-      float: left;
-      margin: 0;
+      // display: inline;
+      // float: left;
+      // margin: 0;
     }
 
     &__list {
-      margin-top: 0;
-      padding-left: 110px;
+      // margin-top: 0;
+      // padding-left: 110px;
       text-align: left;
       list-style: none;
+      position: absolute;
 
       -webkit-animation-name: change;
       -webkit-animation-duration: 10s;
