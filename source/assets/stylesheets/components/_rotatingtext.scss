@@ -1,0 +1,26 @@
+
+
+.rotating-text::before {
+  animation: wordChange 2s infinite;
+  display: inline-block;
+  vertical-align: top;
+  content: "Creative";
+  width: 80px;
+}
+
+/* Animation keyframes */
+
+@keyframes wordChange {
+  0%, 20% {
+    content: "  Creative";
+  }
+  25%, 45% {
+    content: "Passionate";
+  }
+  50%, 70% {
+    content: " Inventive";
+  }
+  75%, 95% {
+    content: "    Driven";
+  }
+}
