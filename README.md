@@ -9,7 +9,10 @@ New Update Goals:
 -Add a proper contact form.
 -Smoother animations
 
-Currently ignoring the above and adding a silly scrolling list to my description
+
+-Rotating / fading set of words in place of "enthusiastic" / "passionate"
+-Language toggle EN / JP / ES
+
 
 ## Using
 
