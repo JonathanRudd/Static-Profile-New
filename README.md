@@ -5,6 +5,8 @@ New Update Goals:
 
 -Add presentation video!
 
+Delay loading so that info is presented in a deliberate way
+
 -Restructure Desktop View
   -Change big screen view into a more minimalist design with scrolling and JS slide ins (silly but shows js ability)
 
