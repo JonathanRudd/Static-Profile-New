@@ -1,26 +1,30 @@
 New Update Goals:
 
 
--Align projects grid
+
 
 -Add presentation video!
 
-Delay loading so that info is presented in a deliberate way
+
 
 -Restructure Desktop View
   -Change big screen view into a more minimalist design with scrolling and JS slide ins (silly but shows js ability)
 
 -Tidy Up and neaten Project dropdown sections (proper cards?)
--Add text glow effect like in KTproject
+-Add devicons!
+
 -Add a proper contact form.
--Smoother animations
+
 
 
 
 -Language toggle EN / JP / ES
 
 Done: -Rotating / fading set of words in place of "enthusiastic" / "passionate"
-
+-Delay loading so that info is presented in a deliberate way
+-Align projects grid
+-Add text glow effect like in KTproject
+-Smoother animations
 
 ## Using
 
